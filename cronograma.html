@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookahead - Cronograma Integrado</title>
+    <link rel="stylesheet" href="cronograma.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-info">
+                <h1>Planejamento Físico e Previsão de Compras <span>Buy ahead</span></h1>
+                <p>Visão Integrada de Produção e Suprimentos</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn-refresh">Atualizar Cronograma</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Atividade (Cronograma)</th>
+                            <th>Início</th>
+                            <th class="col-kitting">Kit de Materiais (BOM)</th>
+                            <th class="col-kitting">Quantidade</th>
+                            <th class="col-alert">Limite p/ Pedido (Lead Time)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="task-name">Alvenaria Estrutural</div>
+                                <div class="task-meta">Local: Torre A / 1º Pav</div>
+                            </td>
+                            <td class="date-cell">10/04/2026</td>
+                            <td class="kitting-cell">
+                                <div class="item-name">Bloco de Concreto 14x19x39</div>
+                                <div class="item-tag">Insumo Crítico</div>
+                            </td>
+                            <td class="kitting-cell">
+                                <span class="badge-qty">1.200 UN</span>
+                            </td>
+                            <td class="alert-cell">
+                                <div class="limit-date">25/03/2026</div>
+                                <div class="lead-time">Lead Time: 15 dias</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="task-name">Instalações Hidráulicas</div>
+                                <div class="task-meta">Local: Torre A / 1º Pav</div>
+                            </td>
+                            <td class="date-cell">15/04/2026</td>
+                            <td class="kitting-cell">
+                                <div class="item-name">Tubo PVC Esgoto 100mm</div>
+                                <div class="item-tag">Insumo Crítico</div>
+                            </td>
+                            <td class="kitting-cell">
+                                <span class="badge-qty">45 M</span>
+                            </td>
+                            <td class="alert-cell">
+                                <div class="limit-date">05/04/2026</div>
+                                <div class="lead-time">Lead Time: 10 dias</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="task-name">Revestimento Interno (Gesso)</div>
+                                <div class="task-meta">Local: Torre B / 3º Pav</div>
+                            </td>
+                            <td class="date-cell">22/04/2026</td>
+                            <td class="kitting-cell">
+                                <div class="item-name">Gesso em Pó (Saco 40kg)</div>
+                                <div class="item-tag">Insumo Crítico</div>
+                            </td>
+                            <td class="kitting-cell">
+                                <span class="badge-qty">250 SC</span>
+                            </td>
+                            <td class="alert-cell">
+                                <div class="limit-date">15/04/2026</div>
+                                <div class="lead-time">Lead Time: 7 dias</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>Página de estudo - Lookahead v1.0 (Pure HTML/CSS)</p>
+        </footer>
+    </div>
+</body>
+</html>
